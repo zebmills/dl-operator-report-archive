@@ -62,6 +62,8 @@ if (/Shopify revenue|Top Campaigns|Risk Flags|Paid spend/.test(latest.html)) {
 await rm(distDir, { recursive: true, force: true });
 await mkdir(distDir, { recursive: true });
 await writeFile(path.join(distDir, "index.html"), latest.html);
+await mkdir(path.join(distDir, latest.date), { recursive: true });
+await writeFile(path.join(distDir, latest.date, "index.html"), latest.html);
 await writeFile(path.join(distDir, ".nojekyll"), "");
 
 const worker = `const REPORT_DATE = ${JSON.stringify(latest.date)};

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>DL Operator Report - 2026-08-07</title>
+<style>
+:root{--bg:#101114;--panel:#17191f;--line:#2b2f3a;--text:#f4f5f7;--muted:#9ca3af;--accent:#36c28f;--warn:#f0b429;--bad:#f97373}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.5}button,input{font:inherit}
+.gate{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}.box{width:min(420px,100%);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:24px}.box h1{margin:0 0 8px;font-size:24px}.box p{margin:0 0 18px;color:var(--muted)}input{width:100%;background:#0b0c0f;color:var(--text);border:1px solid var(--line);border-radius:6px;padding:12px;margin-bottom:12px}button{width:100%;background:var(--accent);border:0;border-radius:6px;padding:12px;font-weight:700;color:#07110d;cursor:pointer}.err{display:none;color:var(--bad);font-size:13px;margin-top:12px}
+.report{max-width:1180px;margin:0 auto;padding:40px 24px 72px}.top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:24px}.eyebrow,.date,.stamp{color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-size:12px}h1{font-size:40px;margin:0}h2{font-size:18px;margin:0 0 14px}.headline{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:32px}.headline div,.channels article,.grid2>div{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}.headline span,.channels span{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.08em}.headline strong,.channels strong{display:block;font-size:26px;margin-top:6px}.channels{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:32px}.channels em{display:block;color:var(--muted);font-style:normal;font-size:13px}.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin-bottom:24px}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;border-bottom:1px solid var(--line);padding:9px 6px;vertical-align:top}th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em}.risk{margin:0;padding-left:18px}.risk li{margin-bottom:8px}.health p{margin:0 0 8px;color:var(--muted)}.health b{display:inline-block;min-width:88px}.ok{color:var(--accent)}.bad{color:var(--bad)}
+</style>
+</head>
+<body>
+<div class="gate" id="gate"><form class="box" id="form">
+<h1>DL Daily Report</h1><p>Protected operator archive for 2026-08-07.</p>
+<input id="password" type="password" autocomplete="current-password" placeholder="Access code" autofocus>
+<button type="submit">Unlock</button><div class="err" id="err">Access code not recognised.</div>
+</form></div>
+<div id="content"></div>
+<script>
+const payload = {"cipher": "AES-256-GCM", "ciphertext": "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", "iterations": 250000, "kdf": "PBKDF2-SHA256", "nonce": "KLL+0pt75Qu6VIOV", "salt": "X9wVvusRMPBLHWLsHwRKfQ=="};
+const b64 = value => Uint8Array.from(atob(value), char => char.charCodeAt(0));
+async function decrypt(password) {
+  const enc = new TextEncoder();
+  const baseKey = await crypto.subtle.importKey("raw", enc.encode(password), "PBKDF2", false, ["deriveKey"]);
+  const key = await crypto.subtle.deriveKey(
+    {name: "PBKDF2", salt: b64(payload.salt), iterations: payload.iterations, hash: "SHA-256"},
+    baseKey,
+    {name: "AES-GCM", length: 256},
+    false,
+    ["decrypt"]
+  );
+  const plain = await crypto.subtle.decrypt({name: "AES-GCM", iv: b64(payload.nonce)}, key, b64(payload.ciphertext));
+  return new TextDecoder().decode(plain);
+}
+document.getElementById("form").addEventListener("submit", async event => {
+  event.preventDefault();
+  document.getElementById("err").style.display = "none";
+  try {
+    document.getElementById("content").innerHTML = await decrypt(document.getElementById("password").value);
+    document.getElementById("gate").remove();
+  } catch (_err) {
+    document.getElementById("err").style.display = "block";
+  }
+});
+</script>
+</body>
+</html>
